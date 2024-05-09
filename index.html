@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            colors: {
+            clifford: '#3C2A21',
+            secondary: '#D5CEA3',
+            third: '#A05344',
+            }
+          }
+        }
+      }
+    
+  </script>
+</head>
+<body class="bg-secondary p-0 m-0 scroll-smooth">
+    <nav class="bg-clifford  flex justify-end items-center py-2">
+        <ul class="text-white font-sans flex mx-4">
+            <li class="mx-3  hover:text-gray-500 px-2"><a href="#home">Home</a></li>
+            <li class="mx-3  hover:text-gray-500 px-2"><a href="#about">About</a></li>
+            <li class="mx-3  hover:text-gray-500 px-2"><a href="#project">project</a></li>
+            <li class="mx-3  hover:text-gray-500 px-2"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="relative">
+            <img src="/image/bgporto.jpg" class="w-full h-auto opacity-90" alt="">
+          <div class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+            <button type="button" class="flex text-center mt-4 text-4xl justify-center items-center font-bold font-sans italic text-white"><a href="">My Portofolio</a></button>
+          </div>  
+           
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="max-w-6xl text-white mx-auto py-8 bg-clifford shadow-2xl rounded-2xl my-10 overflow-hidden flex flex-col md:flex-row md:items-center md:justify-center">
+            <img class="w-52 h-52 m-auto rounded-full" src="/image/profile.png" alt="Foto Profil">
+            <div class="p-4">
+              <div class="font-bold text-4xl mb-2 ">Hi👋, I'm <br class="hidden md:inline"> Muhammad Affan Fauzan, <br class="hidden md:inline"> Web Developer </div>
+              <p class="text-lg">Saya adalah seorang pelajar dari SMK Plus Pelita Nusantara. Bidang yang saya pelajari adalah sebagai software engineer yang berkontribusi di bagian frontend dan backend pada bidang web developer.</p>
+            </div>
+          </div>
+    </section>
+
+
+
+    <section id="project">
+        <div class="flex-col items-center justify-center flex p-4">
+            <h1 class="font-bold text-3xl text-clifford mb-4">My Project</h1>
+            <h2 class="font-bold text-xl text-clifford mb-4">Project terbaru yang saya buat:</h2>
+            <div class="max-w-2xl mx-auto">
+                <img class="w-full my-2" src="/image/project1.png" alt="">
+                <img class="w-full my-2" src="/image/project2.png" alt="">
+                <h1 class="text-xl font-semibold mt-4">WEB DESIGNER</h1>
+                <p class="text-base mb-4">Ini merupakan project saya saat menjadi bagian tim frontend untuk membuat absensi menggunakan scan-QR</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Contact">
+        <div class="flex-col items-center justify-center flex p-4">
+            <h1 class="font-bold text-3xl text-clifford mb-4" >My Contact</h1>
+        </div>
+
+        <div>
+
+        </div>
+
+        <footer>
+
+        </footer>
+    </section>
+</body>
+</html>
